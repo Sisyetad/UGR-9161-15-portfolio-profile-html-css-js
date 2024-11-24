@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Portfolio of Sisay Tadewos">
+  <meta name="author" content="Sisay Tadewos">
+  <meta name="keywords" content="Sisay Tadewos, Portfolio, Full Stack Developer, AI Enthusiast, Student">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="1 days">
+  <title>Personal Portfolio</title>
+
+  <link rel="icon" type="image/png" href="/src/Images/favicon.ico">
+</head>
+
+<body>
+  <!-- Skip to Content for Accessibility -->
+  <a href="#main-content">Skip to content</a>
+
+  <!-- Header -->
+  <header>
+    <div>
+      <div>
+        <div>
+          <img src="/src/Images/profile.webp" alt="My Profile Picture" loading="lazy">
+        </div>
+        <div>
+          <a href="https://x.com/SisThade51903" rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i></i></a>
+          <a href="https://t.me/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="Telegram"><i></i></a>
+          <a href="https://www.instagram.com/sis__777999/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><i></i></a>
+          <a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn"><i></i></a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <button id="menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
+        <span></span>
+      </button>
+
+      <!-- Navigation -->
+      <div id="nav">
+        <nav aria-label="Main Navigation">
+          <ul>
+            <li><a href="/src/index.html" class="active" aria-current="page"><i></i> Home</a></li>
+            <li><a href="/src/About/about.html"><i></i> About</a></li>
+            <li><a href="/src/Skill/skill.html"><i></i> Skill</a></li>
+            <li><a href="/src/Hobby/hobby.html"><i></i> Hobby</a></li>
+            <li><a href="/src/Contact/contact.html"><i></i> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+      <!-- Contact Section -->
+      <section id="contact" aria-labelledby="contact-heading">
+          <div>
+              <h2 id="contact-heading">Contact Me</h2>
+              <form action="submit-form.php" method="POST" enctype="application/x-www-form-urlencoded">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required minlength="2" maxlength="100">
+
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" placeholder="Your Message" required minlength="10" maxlength="1000"></textarea>
+
+                  <button type="submit" class="btn">Send Message</button>
+              </form>
+          </div>
+          <div class="location-section">
+              <h2 class="section-title">Our Location</h2>
+              <div class="map-container">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5118.74319491407!2d38.76573683304265!3d9.040486511143849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f642ba9e021%3A0x2321687a606863f3!2sAddis%20Ababa%20Institute%20of%20Technology!5e0!3m2!1sen!2set!4v1731411515137!5m2!1sen!2set" 
+                  title="Our Location" 
+                  loading="lazy" 
+                  sandbox="allow-scripts" 
+                  allow="geolocation">
+                </iframe>
+              
+              </div>
+              <div>
+                  <p>Visit us at our main office or reach out to any of our branch locations using the navigation below.</p>
+              </div>
+          </div>
+      </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+      <div>
+          <p>&copy; 2024 Sisay Tadewos. All Rights Reserved.</p>
+          <ul>
+              <li><a href="https://x.com/SisThade51903" rel="noopener noreferrer" aria-label="Twitter"><i></i></a></li>
+              <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" aria-label="GitHub"><i></i></a></li>
+              <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" aria-label="LinkedIn"><i></i></a></li>
+          </ul>
+      </div>
+  </footer>
+
+</body>
+
+</html>
