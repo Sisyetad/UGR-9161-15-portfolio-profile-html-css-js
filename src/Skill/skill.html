@@ -13,118 +13,105 @@
   <meta name="robots" content="index, follow">
   <meta name="revisit-after" content="1 days">
   <title>Personal Portfolio</title>
-
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="skill.css">
   <link rel="icon" type="image/png" href="/src/Images/favicon.ico">
 </head>
 
 <body>
   <!-- Skip to Content for Accessibility -->
-  <a href="#main-content">Skip to content</a>
+  <a class="skip-link visually-hidden" href="#main-content">Skip to content</a>
 
   <!-- Header -->
-  <header>
-    <div>
-      <div>
-        <div>
-          <img src="/src/Images/profile.webp" alt="My Profile Picture" loading="lazy">
+  <header class="header">
+      <div class="profile">
+        <div class="profile-pic">
+          <img src="/src/Images/profile.webp" class="image img-fluid" alt="My Profile Picture" loading="lazy">
         </div>
-        <div>
-          <a href="https://x.com/SisThade51903" rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i></i></a>
-          <a href="https://t.me/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="Telegram"><i></i></a>
-          <a href="https://www.instagram.com/sis__777999/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><i></i></a>
-          <a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn"><i></i></a>
-        </div>
+        <ul class="social-links">
+          <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="../Images/Twitter.png" alt="Twitter Icon"></a></li>
+          <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github">
+            <img src="../Images/Github.png" alt="GitHub Icon"></a></li>
+          <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin">
+            <img src="../Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
+          <li><a href="https://www.instagram.com/sis__777999/" rel="noopener noreferrer" target="_blank" aria-label="Instagram" class="instagram"> <img src="../Images/Instagram.png" alt="instagram icon"></a></li>
+        </ul>
       </div>
 
       <!-- Mobile Menu -->
-      <button id="menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
-        <span></span>
+      <button id="menu-btn" class="menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
+        <span class="menu-icon"><img src="../Images/menu.png" alt="Menu Icon" loading="lazy"></span>
       </button>
 
       <!-- Navigation -->
-      <div id="nav">
+      <div id="nav" class="nav">
         <nav aria-label="Main Navigation">
           <ul>
-            <li><a href="/src/index.html" aria-current="page"><i></i> Home</a></li>
-            <li><a href="/src/About/about.html"><i ></i> About</a></li>
-            <li><a href="/src/Skill/skill.html"><i></i> Skill</a></li>
-            <li><a href="/src/Hobby/hobby.html"><i></i> Hobby</a></li>
-            <li><a href="/src/Contact/contact.html"><i></i> Contact</a></li>
+            <li><a href="../index.html" ><img src="../Images/Home.png" alt="Home icon"><span>Home</span></a></li>
+            <li><a href="../About/about.html"><img src="../Images/person.png" alt="person icon"> <span>About</span></a></li>
+            <li><a href="skill.html" class="active" aria-current="page"><img src="../Images/Settings.png" alt="skill icon" class="span-icon"><span>Skills</span></a></li>
+            <li><a href="../Hobby/hobby.html"><img src="../Images/Video.png" alt="Hobby icon"><span>Hobby</span></a></li>
+            <li><a href="../Contact/contact.html"><img src="../Images/contact.png" alt="contact icon"><span>Contact</span></a></li>
           </ul>
         </nav>
       </div>
-    </div>
   </header>
   <main id="main-content">
     <!-- Skills page -->
-    <section id="skills">
-      <h1>My Skills</h1>
+    <section id="skills" class="skills">
+      <h1>Skills</h1>
       <!-- Skills Section -->
-      <section aria-labelledby="skills-heading">
-        <h2 id="skills-heading">Skills Section</h2>
-        <div>
-          <h2>Skills</h2>
-          <div>
-            <!-- First set of skills -->
-            <div>
-              <div style="--skill-index: 1;">
-                <i></i>
-                <h3>JavaScript</h3></div>
-              <div style="--skill-index: 2;">
-                <i></i>
-                <h3>Python</h3></div>
-              <div style="--skill-index: 3;">
-                <i></i>
-                <h3>HTML5</h3></div>
-              <div style="--skill-index: 4;">
-                <i></i>
-                <h3>CSS3</h3></div>
+      <section class="skills" aria-labelledby="skills-heading">
+        <h2 class="visually-hidden" id="skills-heading">Skills Section</h2>
+        <div class="skills-section skills-slider">
+          <!-- First set of skills -->
+          <div class="skills-grid first-set">
+            <div class="skill" style="--skill-index: 1;">
+              <img src="../Images/Js.png" alt="JavaScript Icon" loading="lazy">
+              <h5>JavaScript</h5></div>
+            <div class="skill" style="--skill-index: 2;">
+              <img src="../Images/python.png" alt="Python Icon" loading="lazy">
+              <h5>Python</h5></div>
+            <div class="skill skip" style="--skill-index: 3;">
+              <img src="../Images/Node.png" alt="Node.js Icon" loading="lazy">
+              <h5>Node.js</h5>
             </div>
-          
-            <!-- Second set of skills -->
-            <div>
-              <div style="--skill-index: 5;">
-                <i></i>
-                <h3>SQL/Database</h3></div>
-              <div style="--skill-index: 6;">
-                <i></i>
-                <h3>Project Management</h3></div>
-                <div>
-                  <i></i>
-                  <h3>Bootstrap</h3>
-              </div>
-              <div>
-                  <i></i>
-                  <h3>Java</h3>
-              </div>
-
+            <div class="skill" style="--skill-index: 4;">
+              <img src="../Images/html.png" alt="HTML5 Icon" loading="lazy">
+              <h5>HTML5</h5></div>
+            <div class="skill" style="--skill-index: 5;">
+              <img src="../Images/css.png" alt="CSS3 Icon" loading="lazy">
+              <h5>CSS3</h5></div>
+            <div class="skill skip" style="--skill-index: 6;">
+              <img src="../Images/React.png" alt="React Icon" loading="lazy">
+              <h5>React</h5>
             </div>
-
-            <!-- Third set of skills -->
-            <div>
-              <div>
-                <i></i>
-                <h3>React</h3>
+          </div>
+  
+          <!-- Second set of skills -->
+  
+          <div class="skills-grid second-set">
+            <div class="skill" style="--skill-index: 7;">
+              <img src="../Images/React.png" alt="React Icon" loading="lazy">
+              <h5>React</h5>
             </div>
-            <div>
-                <i></i>
-                <h3>Node.js</h3>
+            <div class="skill" style="--skill-index: 8;">
+              <img src="../Images/Node.png" alt="Node.js Icon" loading="lazy">
+              <h5>Node.js</h5>
             </div>
-              <div>
-                  <i></i>
-                  <h3>AI</h3>
-              </div>
-              <div>
-                  <i></i>
-                  <h3>Azure Management</h3>
-              </div>
+            <div class="skill" style="--skill-index: 9;">
+              <img src="../Images/prog.png" alt="icon of programming" loading="lazy">
+              <h5>Comp-Programming</h5>
+            </div>
+            <div class="skill" style="--skill-index: 10;">
+              <img src="../Images/Azure.png" alt="Azure Icon" loading="lazy">
+              <h5>Azure Management</h5>
+            </div>
           </div>
             <!-- Navigation Dots -->
-            <div>
-              <span data-slide="1"></span>
-              <span data-slide="2"></span>
-              <span data-slide="3"></span>
-            </div>
+          <div class="navigation-dots">
+            <span class="dot active" data-slide="1"></span>
+            <span class="dot"  data-slide="2"></span>
           </div>
         </div>
 
@@ -132,32 +119,36 @@
 
 
       <!-- Training Section -->
-      <section id="training">
-        <div>
-            <h2>Training</h2>
-            <div>
+      <section id="training" class="training">
+        <div class="container">
+            <h2 class="section-title">Training</h2>
+            <div class="training-grid">
                 <!-- Training Item 1 -->
-                <div>
+                <div class="training-item">
                     <img 
                         src="/src/Images/Ittraining.webp" 
                         alt="African students participating in IT training program" 
-                        loading="lazy">
-                    <h3>IT Training Project</h3>
-                    <p>
+                        loading="lazy" class="training-image">
+                    <div>
+                    <h3 class="training-title">IT Training</h3>
+                    <p class="training-description">
                         A project focused on training African students with IT skills and Microsoft Azure cloud computing.
                     </p>
+                    </div>
                 </div>
 
                 <!-- Training Item 2 -->
-                <div>
+                <div class="training-item">
                     <img 
                         src="/src/Images/C++training.webp" 
                         alt="School students learning C++ programming fundamentals" 
-                        loading="lazy">
-                    <h3>C++ Programming for School Students</h3>
-                    <p>
+                        loading="lazy" class="training-image">
+                    <div>
+                    <h3 class="training-title">First Programming Training</h3>
+                    <p class="training-description">
                         A project teaching C++ programming to students at the school level, building a foundation for future coding careers.
                     </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -165,31 +156,35 @@
 
       <!-- Projects Section -->
       <section id="projects">
-        <div>
-            <h2>Projects</h2>
+        <div  class="projects-section project-filters">
+            <h2 class="section-title">Projects</h2>
 
             <!-- Filter Tabs -->
-            <h2 id="filter-title">Project Categories</h2>
-            <div>
+            <h4 id="filter-title">Project Categories</h4>
+            <div class="filter-tabs">
                 <button 
+                    class="filter-btn active"
                     data-filter="all" 
                     aria-pressed="true" 
                     tabindex="0">
                     All
                 </button>
-                <button  
+                <button 
+                    class="filter-btn" 
                     data-filter="web" 
                     aria-pressed="false" 
                     tabindex="0">
                     Web Development
                 </button>
                 <button 
+                    class="filter-btn"
                     data-filter="data" 
                     aria-pressed="false" 
                     tabindex="0">
                     Data Science
                 </button>
                 <button 
+                    class="filter-btn"
                     data-filter="ai" 
                     aria-pressed="false" 
                     tabindex="0">
@@ -200,52 +195,43 @@
             <!-- Project Grid -->
             <div class="projects-grid">
                 <!-- AI-Based Project -->
-                <div data-category="ai">
+                <div class="project-item" data-category="ai">
                     <img 
                         src="/src/Images/pneumonia.webp" 
                         alt="Pneumonia detection project using AI and deep learning"
-                        loading="lazy">
-                    <h3>Pneumonia Detection Using AI</h3>
+                        loading="lazy" class="project-image">
+                    <h5>Pneumonia Detection Using AI</h5>
                     <p>
                         An AI-driven project leveraging deep learning models to accurately diagnose pneumonia using medical imaging data.
                     </p>
                 </div>
 
                 <!-- Data Structure-Based Project -->
-                <div data-category="data">
+                <div class="project-item" data-category="data">
                     <img 
                         src="/src/Images/PHR.webp" 
                         alt="Centralized Patient History Record management system" 
-                        loading="lazy">
-                    <h3>Centralized Patient History Record</h3>
+                        loading="lazy" class="project-image">
+                    <h5>Centralized Patient History Record</h5>
                     <p>
                         A robust system designed to manage and access patient history records efficiently, ensuring data integrity and security.
                     </p>
                 </div>
 
                 <!-- Web-Based Project 1 -->
-                <div data-category="web">
+                <div class="project-item" data-category="web">
                     <img 
                         src="/src/Images/SamTech.webp" 
                         alt="SamiTech eCommerce Website showcasing products and payment features" 
-                        loading="lazy">
-                    <h3>SamiTech eCommerce Website</h3>
+                        loading="lazy" class="project-image">
+                    <h5>SamiTech</h5>
                     <p>
                         An end-to-end eCommerce platform developed for SamiTech, featuring a user-friendly interface and seamless payment integration.
                     </p>
                 </div>
 
-                <!-- Web-Based Project 2 -->
-                <div data-category="web">
-                    <img 
-                        src="/src/Images/psychotherapy.webp" 
-                        alt="Melkam Online Psychotherapy platform for mental health services" 
-                        loading="lazy">
-                    <h3>Melkam Online Psychotherapy</h3>
-                    <p>
-                        An innovative online platform providing accessible mental health services and psychotherapy sessions, ensuring confidentiality and user support.
-                    </p>
-                </div>
+                
+
             </div>
         </div>
       </section>
@@ -256,15 +242,17 @@
   
   <!-- Footer Section -->
   <footer>
-    <div>
-      <p>&copy; 2024 Sisay Tadewos. All Rights Reserved.</p>
-      <ul>
-        <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i></i></a></li>
-        <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><i></i></a></li>
-        <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn"><i></i></a></li>
-      </ul>
-    </div>
+    <p>&copy; 2024 Sisay Tadewos. All Rights Reserved.</p>
+    <ul class="social-links">
+      <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="../Images/Twitter.png" alt="Twitter Icon"></a></li>
+      <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github">
+        <img src="../Images/Github.png" alt="GitHub Icon"></a></li>
+      <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin">
+        <img src="../Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
+    </ul>
   </footer>
 
+  <script src="../JS/script.js" defer></script>
+  <script src="./skill.js" defer></script>
 </body>
 </html>

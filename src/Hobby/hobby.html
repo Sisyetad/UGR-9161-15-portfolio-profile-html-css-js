@@ -13,7 +13,8 @@
   <meta name="robots" content="index, follow">
   <meta name="revisit-after" content="1 days">
   <title>Personal Portfolio</title>
-
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="hobby.css">
   <link rel="icon" type="image/png" href="/src/Images/favicon.ico">
 
   <!-- Preload Important videos -->
@@ -22,170 +23,185 @@
 
 <body>
   <!-- Skip to Content for Accessibility -->
-  <a href="#main-content">Skip to content</a>
+  <a class="skip-link visually-hidden" href="#main-content">Skip to content</a>
 
   <!-- Header -->
-  <header>
-    <div>
-      <div>
-        <div>
-          <img src="/src/Images/profile.webp" alt="My Profile Picture" loading="lazy">
+  <header class="header">
+      <div class="profile">
+        <div class="profile-pic">
+          <img src="/src/Images/profile.webp" class="image img-fluid" alt="My Profile Picture" loading="lazy">
         </div>
-        <div class="social-links text-center">
-          <a href="https://x.com/SisThade51903" rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i></i></a>
-          <a href="https://t.me/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="Telegram"><i></i></a>
-          <a href="https://www.instagram.com/sis__777999/" rel="noopener noreferrer" target="_blank" aria-label="Instagram"><i></i></a>
-          <a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn"><i></i></a>
-        </div>
+        <ul class="social-links">
+          <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="../Images/Twitter.png" alt="Twitter Icon"></a></li>
+          <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github">
+            <img src="../Images/Github.png" alt="GitHub Icon"></a></li>
+          <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin">
+            <img src="../Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
+          <li><a href="https://www.instagram.com/sis__777999/" rel="noopener noreferrer" target="_blank" aria-label="Instagram" class="instagram"> <img src="../Images/Instagram.png" alt="instagram icon"></a></li>
+        </ul>
       </div>
 
-      <!-- Mobile Menu -->
-      <button id="menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
-        <span></span>
+      <button id="menu-btn" class="menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
+        <span class="menu-icon"><img src="../Images/menu.png" alt="Menu Icon" loading="lazy"></span>
       </button>
 
       <!-- Navigation -->
-      <div id="nav">
+      <div id="nav" class="nav">
         <nav aria-label="Main Navigation">
           <ul>
-            <li><a href="/src/index.html" aria-current="page"><i></i> Home</a></li>
-            <li><a href="/src/About/about.html"><i></i> About</a></li>
-            <li><a href="/src/Skill/skill.html"><i></i> Skill</a></li>
-            <li><a href="/src/Hobby/hobby.html"><I></i> Hobby</a></li>
-            <li><a href="/src/Contact/contact.html"><i></i> Contact</a></li>
+            <li><a href="../index.html" ><img src="../Images/Home.png" alt="Home icon"><span>Home</span></a></li>
+            <li><a href="../About/about.html"><img src="../Images/person.png" alt="person icon"> <span>About</span></a></li>
+            <li><a href="../Skill/skill.html"><img src="../Images/Settings.png" alt="skill icon" class="span-icon"><span>Skills</span></a></li>
+            <li><a href="hobby.html" class="active" aria-current="page"><img src="../Images/Video.png" alt="Hobby icon"><span>Hobby</span></a></li>
+            <li><a href="../Contact/contact.html"><img src="../Images/contact.png" alt="contact icon"><span>Contact</span></a></li>
           </ul>
         </nav>
       </div>
-    </div>
   </header>
   <!-- Main Content -->
   <main id="main-content">
     <section id="hobby" aria-labelledby="hobby-heading">
-      <div>
-        
-        <!-- Hobbies Section -->
-        <div>
-          <h2 id="hobby-heading">My Hobbies</h2>
-
-          <!-- Videos Section -->
-          <div>
-            <h3>Videos</h3>
-            <!-- Each iframe includes title for better context -->
+        <h1 class="hobby-heading">My Hobbies</h1>
+        <div class="videos-container">
+          <h3 id="videos">Videos</h3>
+          <div class="hobbies-videos">
+            <div class="videos video1">
+              <video controls aria-label="My Favorite music video">
+                <source src="/src/Video/favorite.webm" title="My Favorite music" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+              <h5>My Favorite music video</h5>
+            </div>
+            <div class="videos iframe">
             <iframe 
-              src="https://www.youtube.com/embed/lo28cLs-jJc" 
+              src="https://www.youtube.com/embed/lo28cLs-jJc?enablejsapi=1" 
               title="Christian teaching video"
               loading="lazy"
               allowfullscreen
-              aria-label="Christian teaching video"></iframe>
-
+              aria-label="Christian teaching video">
+            </iframe>
+            <h5>Christian teaching video</h5>
+            </div>
+            <div class="videos iframe">
             <iframe 
-              src="https://www.youtube.com/embed/oUPmqcLmsM8" 
+              src="https://www.youtube.com/embed/oUPmqcLmsM8?enablejsapi=1" 
               title="Movie based on true story"
               loading="lazy"
               allowfullscreen
-              aria-label="Movie based on true story"></iframe>
+              aria-label="Movie based on true story">
+            </iframe>
+            <h5>Movie based on true story</h5>
+            </div>
 
+            <div class="videos iframe">
             <iframe 
-              src="https://www.youtube.com/embed/pGZI_YX7410" 
-              title="The Imitation Game | Full Movie | HD (2021)"
-              loading="lazy"
-              allowfullscreen
-              aria-label="The Imitation Game movie"></iframe>
-
-            <iframe 
-              src="https://www.youtube.com/embed/AoKm1-Ogsjw" 
+              src="https://www.youtube.com/embed/AoKm1-Ogsjw?enablejsapi=1" 
               title="AI Shocks the World: Synthetic Humans, New Ameca, Orion, Time Machine, Jarvis…"
               loading="lazy"
               allowfullscreen
-              aria-label="AI news and updates video"></iframe>
-              <div>
-                <h3>My Favorite Music Video</h3>
-                <video controls aria-label="My Favorite music video">
-                  <source src="/src/Video/favorite.webm" title="My Favorite music" type="video/webm">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+              aria-label="AI news and updates video">
+            </iframe>
+            <h5>AI Shocks the World</h5>
             </div>
-          
+            </div>
+            <div class="navigation-dots">
+              <span class="dot active" data-slide="1"></span>
+              <span class="dot"  data-slide="2"></span>
+            </div>
+          </div>
         </div>
         
 
         <!-- Interests Table Section -->
-        <div>
+        <div class="interests-container">
           <h3>My Interests</h3>
+          <div class="interests-table">
           <table>
-            <caption>Table of My Interests</caption>
-            <thead>
-              <tr>
-                <th scope="col">Interest Group</th>
-                <th scope="col">Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Spiritual</td>
-                <td>Bible studies, meditation, spiritual growth activities</td>
-              </tr>
-              <tr>
-                <td>Science</td>
-                <td>Researching AI, quantum computing, machine learning</td>
-              </tr>
-              <tr>
-                <td>Creative</td>
-                <td>Music composition, digital art, creative writing</td>
-              </tr>
-            </tbody>
+            <tr>
+              <th>Interest Group</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>Spiritual</td>
+              <td>I deeply value communal fellowship, and spiritual growth through activities like Bible studies, meditation, and practices 
+                that nurture inner peace and purpose.  These practices keep me inspired and spiritually enriched.</td>
+            </tr>
+            <tr>
+              <td>Science</td>
+              <td>I have a strong curiosity for AI, quantum computing, and machine learning, where I enjoy researching cutting-edge advancements. 
+                I'm also passionate about applying creative problem-solving to tackle challenges in these areas.</td>
+            </tr>
+            <tr>
+              <td>Creative</td>
+              <td>Creativity is central to my personal and professional life. I engage in music composition, and creative writing to explore ideas 
+                and express myself. Additionally, I enjoy playing chess as a way to sharpen strategic thinking.</td>
+            </tr>
           </table>
+          </div>
         </div>
-
         <!-- Audio Section -->
-        <div>
+        <div class="audio-section">
           <h3>Favorite Audio Tracks</h3>
+          <div class="audio-container">
+            
 
-          <!--  Multiple Tracks with an accessible folder for organization -->
-          <div>
-            <span>🎵 Open Audio Folder</span>
-            <div>
-              <audio src="/src/Audio/audio1.mp3" controls aria-label="Track 1: Favorite song"></audio>
-              <audio src="/src/Audio/audio2.mp3" controls aria-label="Track 2: Another favorite song"></audio>
-              <audio src="/src/Audio/audio3.mp3" controls aria-label="Track 3: Relaxing music"></audio>
+            <!--  Multiple Tracks with an accessible folder for organization -->
+            <div class="audio-folder audio-folder1">
+              <span>🎵 Open Audio Folder</span>
+              <div class="audio-tracks">
+                <audio src="/src/Audio/audio1.mp3" controls aria-label="Track 1: Favorite song"></audio>
+                <audio src="/src/Audio/audio2.mp3" controls aria-label="Track 2: Another favorite song"></audio>
+                <audio src="/src/Audio/audio3.mp3" controls aria-label="Track 3: Relaxing music"></audio>
+              </div>
             </div>
-          </div>
 
-          <div>
-            <span>🎵 Open Audio Folder</span>
-            <div>
-              <audio src="/src/Audio/audio4.mp3" controls aria-label="Track 4: Uplifting music"></audio>
-              <audio src="/src/Audio/audio5.mp3" controls aria-label="Track 5: Motivational audio"></audio>
-              <audio src="/src/Audio/audio6.mp3" controls aria-label="Track 6: Calm audio"></audio>
+            <div class="audio-folder">
+              <span>🎵 Open Audio Folder</span>
+              <div class="audio-tracks">
+                <audio src="/src/Audio/audio4.mp3" controls aria-label="Track 4: Uplifting music"></audio>
+                <audio src="/src/Audio/audio5.mp3" controls aria-label="Track 5: Motivational audio"></audio>
+                <audio src="/src/Audio/audio6.mp3" controls aria-label="Track 6: Calm audio"></audio>
+              </div>
             </div>
-          </div>
 
-          <div>
-            <span>🎵 Open Audio Folder</span>
-            <div>
-              <audio src="/src/Audio/audio7.mp3" controls aria-label="Track 1: Favorite song (repeated)"></audio>
-              <audio src="/src/Audio/audio8.mp3" controls aria-label="Track 2: Another favorite song (repeated)"></audio>
-              <audio src="/src/Audio/audio9.mp3" controls aria-label="Track 3: Relaxing music (repeated)"></audio>
+            <div class="audio-folder">
+              <span>🎵 Open Audio Folder</span>
+              <div class="audio-tracks">
+                <audio src="/src/Audio/audio7.mp3" controls aria-label="Track 7: Favorite song (repeated)"></audio>
+                <audio src="/src/Audio/audio8.mp3" controls aria-label="Track 8: Another favorite song (repeated)"></audio>
+                <audio src="/src/Audio/audio9.mp3" controls aria-label="Track 9: Relaxing music (repeated)"></audio>
+              </div>
+            </div>
+            <div class="audio-folder">
+              <span>🎵 Open Audio Folder</span>
+              <div class="audio-tracks">
+                <audio src="/src/Audio/audio7.mp3" controls aria-label="Track 10: Favorite song (repeated)"></audio>
+                <audio src="/src/Audio/audio8.mp3" controls aria-label="Track 11: Another favorite song (repeated)"></audio>
+                <audio src="/src/Audio/audio9.mp3" controls aria-label="Track 12: Relaxing music (repeated)"></audio>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
   </main>
 
 
   <!-- Footer -->
   <footer>
-    <div>
-      <p>&copy; 2024 Sisay Tadewos. All Rights Reserved.</p>
-      <ul>
-        <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter"><i></i></a></li>
-        <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><i></i></a></li>
-        <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn"><i></i></a></li>
-      </ul>
-    </div>
+    <p>&copy; 2024 Sisay Tadewos. All Rights Reserved.</p>
+    <ul class="social-links">
+      <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="../Images/Twitter.png" alt="Twitter Icon"></a></li>
+      <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github">
+        <img src="../Images/Github.png" alt="GitHub Icon"></a></li>
+      <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin">
+        <img src="../Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
+    </ul>
   </footer>
 
+
+  
+  <script src="../JS/script.js" defer></script>
+  <script src="./hobby.js" defer></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
