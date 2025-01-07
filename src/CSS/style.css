@@ -6,8 +6,8 @@
     font: 700 14px/1 Roboto, sans-serif;
   }
   :root {
-    --header-height: 15vh; 
-    --image-height: 13vh;
+    --header-height: 150px; 
+    --image-height: 130px;
     --header-width: 0;
   }
   body {
@@ -784,4 +784,10 @@
 
 
 
+
+@media (orientation: landscape) and (max-width: 1023px)  {
+  .header {
+  position: absolute;
+  }
+}
 
