@@ -156,3 +156,13 @@ padding: 10px;
     margin: 20px 50px;
   }
 }
+
+
+@media (orientation: landscape) and (max-width: 1023px)  {
+  .training-item {
+    height: 250px;
+  }
+  .training-item img {
+    height:  100%;
+  }
+}

@@ -564,6 +564,10 @@
     --header-height: 18vh; 
     --image-height: 15vh;
   }  
+  #main-content {
+    padding-top: var(--header-height);    
+    min-height: calc(100vh - var(--header-height));
+  }
   
   #hero{
     height: 83vh;
@@ -781,10 +785,14 @@
 
 @media (orientation: landscape) and (max-width: 1023px)  {
   .header {
-  position: absolute;
+  position: relative;
   }
   #hero{
-    height: 90vh;
+    height: 100vh;
+  }
+  #main-content {
+    min-height: 95vh;
+    padding-top: 0;
   }
 }
 
