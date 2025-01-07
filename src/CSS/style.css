@@ -202,7 +202,7 @@
   /* Hero Section */
   .hero {
     width: 100%;
-    min-height: 8vh;
+    min-height: 85vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -566,7 +566,7 @@
   }  
   
   #hero{
-    height: 85vh;
+    height: 83vh;
   }
   
   .hero img {
@@ -606,9 +606,6 @@
 
 
 @media (min-width: 768px) {
-  #hero{
-    height: 100%;
-  }
   
 
   .about-content {
