@@ -6,8 +6,8 @@
     font: 700 14px/1 Roboto, sans-serif;
   }
   :root {
-    --header-height: 150px; 
-    --image-height: 130px;
+    --header-height: 130px; 
+    --image-height: 110px;
     --header-width: 0;
   }
   body {
