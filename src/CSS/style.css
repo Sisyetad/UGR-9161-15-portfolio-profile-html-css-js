@@ -267,12 +267,12 @@
   }
   
   .profile-pic .image1 {
-    animation: slide-left 10s infinite alternate;
+    animation: slide-left 20s infinite alternate;
   }
   
   .profile-pic .image2 {
     position: absolute;
-    animation: slide-right 10s infinite alternate;
+    animation: slide-right 20s infinite alternate;
   }
   
   @keyframes slide-left {
