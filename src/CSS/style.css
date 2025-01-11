@@ -262,6 +262,7 @@
   
   .bio {
     position: relative;
+    padding: 10px;
   }
   
   .bio p {
@@ -276,6 +277,7 @@
     text-decoration: none;
     border: 1px solid #8086A6;
     border-radius: 8px;
+    margin: 10px;
   }
   
   .bio .btn:hover {
@@ -652,7 +654,6 @@
         }
         #nav li a span{
           font-size: 32px;
-          padding: 20px;
         }
         #nav li img{
           width: 40px;

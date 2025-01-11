@@ -84,7 +84,7 @@
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 35px;
     margin-top: 20px;
   }
   

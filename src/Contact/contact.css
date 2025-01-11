@@ -18,7 +18,6 @@
 
 .location-container{
     background-color: #F6F7FA;
-    width:100vw;
 }
 
 
@@ -31,3 +30,8 @@ iframe {
     z-index: 1;
     opacity: 80%;
   }
+
+
+.location-container iframe{
+    width: 100%;
+}

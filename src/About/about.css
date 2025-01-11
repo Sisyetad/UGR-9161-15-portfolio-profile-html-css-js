@@ -2,6 +2,7 @@
   padding-top:20px ;
 }
 
+
 #education {
   display: flex;
   flex-direction: column;
@@ -209,6 +210,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 150px;
     padding: 30px;
+    margin: 50px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1024px)  {
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0px;
     margin: 50px;
   }
 }
