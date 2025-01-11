@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: 700 14px/1 Roboto, sans-serif;
   }
   :root {
     --header-height: 130px; 
@@ -13,47 +12,10 @@
   body {
     background-color: #01000A;
     color: #192240;
-    line-height: 1.5;
     text-align: center;
     width: 100%;
     position: absolute;
     overflow-x: hidden;
-  }
-
-  h1{
-    font-size: 40px;
-    margin: 8px;
-    padding: 8px;
-  }
-  h2{
-    font-size: 32px;
-    margin: 8px;
-    padding: 8px;
-  }
-  h3 {
-    font-size: 24px;
-    margin: 8px;
-    padding: 8px;
-  }
-  
-  h4 {
-    font-size: 20px;
-    margin: 8px;
-    padding: 8px;
-  }
-  
-  h5 {
-    font-size: 16px;
-    margin:8px;
-    padding: 8px;
-  }
- 
-  
-  p {
-      font-size: 12px;
-      margin: 8px;
-    line-height: 1.5;
-    text-align: justify;
   }
 
 
@@ -303,7 +265,7 @@
   }
   
   .bio p {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   
   .bio .btn {
@@ -316,6 +278,9 @@
     border-radius: 8px;
   }
   
+  .bio .btn:hover {
+    background-color: #0c2884;
+  }
   /* Skills Section */
   .skills {
     padding: 25px 15px;

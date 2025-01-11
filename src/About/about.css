@@ -175,6 +175,9 @@
 
 
 @media (min-width: 768px) {
+  section .profile-pic {
+    padding-bottom: 25px;
+  }
 .navigation-dots {
   display: flex;
   justify-content: center;

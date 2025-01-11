@@ -1,0 +1,123 @@
+/* Import Custom Fonts */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../Fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular weight */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../Fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../Fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold weight */
+    font-style: normal;
+  }
+  
+  /* Global Styling */
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #01000A;
+    color: #192240;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+  }
+ 
+  h1{
+    font-size: 40px;
+    margin: 8px;
+    padding: 8px;
+  }
+  h2{
+    font-size: 32px;
+    margin: 8px;
+    padding: 8px;
+  }
+  h3 {
+    font-size: 24px;
+    margin: 8px;
+    padding: 8px;
+  }
+  
+  h4 {
+    font-size: 20px;
+    margin: 8px;
+    padding: 8px;
+  }
+  
+  h5 {
+    font-size: 16px;
+    margin:8px;
+    padding: 8px;
+  }
+ 
+  
+  p {
+      font-size: 12px;
+      margin: 8px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  a {
+    color: #007bff; /* Blue for links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  button {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Inputs */
+  input, textarea {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #E5E7F0;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Responsive Text Scaling */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  

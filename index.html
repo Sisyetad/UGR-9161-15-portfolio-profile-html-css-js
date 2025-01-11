@@ -12,11 +12,9 @@
   <meta name="robots" content="index, follow">
   <meta name="revisit-after" content="1 days">
   <title>Personal Portfolio</title>
-  
+  <link rel="stylesheet" href="./src/CSS/font.css">
   <link rel="stylesheet" href="./src/CSS/style.css">
   <link rel="icon" type="image/png" href="./src/Images/favicon.ico">
-
-
   
   <link rel="preload" href="../src/Images/profile.webp" as="image">
   <link rel="preload" href="./src/Images/hero.webp" as="image">
@@ -30,49 +28,39 @@
   <link rel="preload" href="./src/Images/prog.png" as="image">
   <link rel="preload" href="./src/Images/React.png" as="image">
   <link rel="preload" href="./src/Images/python.png" as="image">
-
 </head>
 
 <body>
-  <!-- Skip to Content Link -->
   <a class="skip-link visually-hidden" href="#main-content">Skip to content</a>
 
-  <!-- Header -->
   <header class="header">
-      <div class="profile">
-        <div class="profile-pic">
-          <img src="./src/Images/profile.webp" alt="Sisay Tadewos' Profile Picture" loading="lazy">
-        </div>
-        <ul class="social-links">
-          <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="./src/Images/Twitter.png" alt="Twitter Icon"></a></li>
-          <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github">
-            <img src="./src/Images/Github.png" alt="GitHub Icon"></a></li>
-          <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin">
-            <img src="./src/Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
-          <li><a href="https://www.instagram.com/sis__777999/" rel="noopener noreferrer" target="_blank" aria-label="Instagram" class="instagram"> <img src="./src/Images/Instagram.png" alt="instagram icon"></a></li>
-        </ul>
-     </div>
-
-      <button id="menu-btn" class="menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
-        <span class="menu-icon"><img src="./src/Images/Menu.png" alt="Menu Icon" loading="lazy"></span>
-      </button>
-
-      <!-- Navigation -->
-       
-      <div id="nav" class="nav">
-        <nav aria-label="Main Navigation">
-          <ul>
-            <li><a href="index.html"  class="active" aria-current="page"><img src="./src/Images/Home.png" alt="Home icon"><span>Home</span></a></li>
-            <li><a href="./src/About/about.html"><img src="./src/Images/person.png" alt="person icon"> <span>About</span></a></li>
-            <li><a href="./src/Skill/skill.html"><img src="./src/Images/Settings.png" alt="skill icon" class="span-icon"><span>Skills</span></a></li>
-            <li><a href="./src/Hobby/hobby.html"><img src="./src/Images/Video.png" alt="Hobby icon"><span>Hobby</span></a></li>
-            <li><a href="./src/Contact/contact.html"><img src="./src/Images/contact.png" alt="contact icon"><span>Contact</span></a></li>
-          </ul>
-        </nav>
+    <div class="profile">
+      <div class="profile-pic">
+        <img src="./src/Images/profile.webp" alt="Sisay Tadewos' Profile Picture" loading="lazy">
       </div>
+      <ul class="social-links">
+        <li><a href="https://x.com/SisThade51903" rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="./src/Images/Twitter.png" alt="Twitter Icon"></a></li>
+        <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github"><img src="./src/Images/Github.png" alt="GitHub Icon"></a></li>
+        <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin"><img src="./src/Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
+        <li><a href="https://www.instagram.com/sis__777999/" rel="noopener noreferrer" target="_blank" aria-label="Instagram" class="instagram"><img src="./src/Images/Instagram.png" alt="instagram icon"></a></li>
+      </ul>
+    </div>
+    <button id="menu-btn" class="menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
+      <span class="menu-icon"><img src="./src/Images/Menu.png" alt="Menu Icon" loading="lazy"></span>
+    </button>
+    <div id="nav" class="nav">
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page"><img src="./src/Images/Home.png" alt="Home icon"><span>Home</span></a></li>
+          <li><a href="./src/About/about.html"><img src="./src/Images/person.png" alt="person icon"> <span>About</span></a></li>
+          <li><a href="./src/Skill/skill.html"><img src="./src/Images/Settings.png" alt="skill icon" class="span-icon"><span>Skills</span></a></li>
+          <li><a href="./src/Hobby/hobby.html"><img src="./src/Images/Video.png" alt="Hobby icon"><span>Hobby</span></a></li>
+          <li><a href="./src/Contact/contact.html"><img src="./src/Images/contact.png" alt="contact icon"><span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Main Content -->
   <main id="main-content">
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background" aria-labelledby="hero-heading">
@@ -93,7 +81,6 @@
           <img class="image1 img-fluid" src="./src/Images/1732450928602.webp" alt="Sisay Tadewos' Profile Picture" loading="lazy">
           <img class="image2 img-fluid" src="./src/Images/1732450795710.webp" alt="Sisay Tadewos' Profile Picture" loading="lazy">
         </div>
-        
         <div class="bio">
           <p> I'm Sisay Tadewos! I’m a passionate and driven Full Stack Developer, an AI enthusiast, and a dedicated software engineering student. 
             I love solving problems, learning about new technologies, and building innovative solutions that make an impact.
@@ -105,7 +92,7 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Educational Background --><!-- Skills Section -->
     <section id="skills" class="skills" aria-labelledby="skills-heading">
       <h2 class="visually-hidden">Skills Section</h2>
       
@@ -208,18 +195,17 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
-      <p>&copy; 2024 Sisay Tadewos. All Rights Reserved.</p>
-      <ul class="social-links">
-        <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="./src/Images/Twitter.png" alt="Twitter Icon"></a></li>
-        <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github">
-          <img src="./src/Images/Github.png" alt="GitHub Icon"></a></li>
-        <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin">
-          <img src="./src/Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
-      </ul>
-  </footer>
 
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sisay Tadewos. All Rights Reserved.</p>
+    <ul class="social-links">
+      <li><a href="https://x.com/SisThade51903" rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="./src/Images/Twitter.png" alt="Twitter Icon"></a></li>
+      <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github"><img src="./src/Images/Github.png" alt="GitHub Icon"></a></li>
+      <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin"><img src="./src/Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
+    </ul>
+  </footer>
 
   <script src="./src/JS/script.js" defer></script>
 </body>

@@ -13,82 +13,96 @@
   <meta name="robots" content="index, follow">
   <meta name="revisit-after" content="1 days">
   <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="../CSS/font.css">
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="./hobby.css">
   <link rel="icon" type="image/png" href="../Images/favicon.ico">
 
-  <!-- Preload Important videos -->
-  <link rel="preload" href="../Videos/faviorite.webm" as="video">
-  <link rel="preload" as="audio" href="../Audio/audio1.mp3">
-  <link rel="preload" as="audio" href="../Audio/audio2.mp3">
-  <link rel="preload" as="audio" href="../Audio/audio3.mp3">
-  <link rel="preload" as="audio" href="../Audio/audio4.mp3">
-  <link rel="preload" as="audio" href="../Audio/audio5.mp3">
-  <link rel="preload" as="audio" href="../Audio/audio6.mp3">
-  <link rel="preload" as="audio" href="../Audio/audio7.mp3">
-  <link rel="preload" as="audio" href="../Audio/audio8.mp3">
-  <link rel="preload" as="audio" href="../Audio/audio9.mp3">
-  <link rel="preload" as="video" href="https://www.youtube.com/embed/oUPmqcLmsM8?enablejsapi=1">
-  <link rel="preload" as="video" href="https://www.youtube.com/embed/lo28cLs-jJc?enablejsapi=1">
-  <link rel="preload" as="video" href="https://www.youtube.com/embed/AoKm1-Ogsjw?enablejsapi=1">
-
-
-
-
+  <!-- Preload Resources -->
+  <link rel="preload" href="../Videos/favorite.webm" as="video">
+  <link rel="preload" href="../Audio/audio1.mp3" as="audio">
+  <link rel="preload" href="../Audio/audio2.mp3" as="audio">
+  <link rel="preload" href="../Audio/audio3.mp3" as="audio">
+  <link rel="preload" href="../Audio/audio4.mp3" as="audio">
+  <link rel="preload" href="../Audio/audio5.mp3" as="audio">
+  <link rel="preload" href="../Audio/audio6.mp3" as="audio">
+  <link rel="preload" href="../Audio/audio7.mp3" as="audio">
+  <link rel="preload" href="../Audio/audio8.mp3" as="audio">
+  <link rel="preload" href="../Audio/audio9.mp3" as="audio">
+  <link rel="preload" href="https://www.youtube.com/embed/oUPmqcLmsM8?enablejsapi=1" as="video">
+  <link rel="preload" href="https://www.youtube.com/embed/lo28cLs-jJc?enablejsapi=1" as="video">
+  <link rel="preload" href="https://www.youtube.com/embed/AoKm1-Ogsjw?enablejsapi=1" as="video">
 </head>
 
 <body>
-  <!-- Skip to Content for Accessibility -->
+  <!-- Skip to Content -->
   <a class="skip-link visually-hidden" href="#main-content">Skip to content</a>
 
   <!-- Header -->
   <header class="header">
-      <div class="profile">
-        <div class="profile-pic">
-          <img src="../Images/profile.webp" class="image img-fluid" alt="My Profile Picture" loading="lazy">
-        </div>
-        <ul class="social-links">
-          <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="../Images/Twitter.png" alt="Twitter Icon"></a></li>
-          <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github">
-            <img src="../Images/Github.png" alt="GitHub Icon"></a></li>
-          <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin">
-            <img src="../Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
-          <li><a href="https://www.instagram.com/sis__777999/" rel="noopener noreferrer" target="_blank" aria-label="Instagram" class="instagram"> <img src="../Images/Instagram.png" alt="instagram icon"></a></li>
+    <div class="profile">
+      <div class="profile-pic">
+        <img src="../Images/profile.webp" class="image img-fluid" alt="My Profile Picture" loading="lazy">
+      </div>
+      <ul class="social-links">
+        <li>
+          <a href="https://x.com/SisThade51903" rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter">
+            <img src="../Images/Twitter.png" alt="Twitter Icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github">
+            <img src="../Images/Github.png" alt="GitHub Icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin">
+            <img src="../Images/Linkedin.png" alt="LinkedIn Icon">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/sis__777999/" rel="noopener noreferrer" target="_blank" aria-label="Instagram" class="instagram">
+            <img src="../Images/Instagram.png" alt="Instagram Icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <button id="menu-btn" class="menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
+      <span class="menu-icon">
+        <img src="../Images/Menu.png" alt="Menu Icon" loading="lazy">
+      </span>
+    </button>
+
+    <!-- Navigation -->
+    <div id="nav" class="nav">
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="../../index.html"><img src="../Images/Home.png" alt="Home icon"><span>Home</span></a></li>
+          <li><a href="../About/about.html"><img src="../Images/person.png" alt="About icon"><span>About</span></a></li>
+          <li><a href="../Skill/skill.html"><img src="../Images/Settings.png" alt="Skill icon"><span>Skills</span></a></li>
+          <li><a href="hobby.html" class="active" aria-current="page"><img src="../Images/Video.png" alt="Hobby icon"><span>Hobby</span></a></li>
+          <li><a href="../Contact/contact.html"><img src="../Images/contact.png" alt="Contact icon"><span>Contact</span></a></li>
         </ul>
-      </div>
-
-      <button id="menu-btn" class="menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
-        <span class="menu-icon"><img src="../Images/Menu.png" alt="Menu Icon" loading="lazy"></span>
-      </button>
-
-      <!-- Navigation -->
-      <div id="nav" class="nav">
-        <nav aria-label="Main Navigation">
-          <ul>
-            <li><a href="../../index.html" ><img src="../Images/Home.png" alt="Home icon"><span>Home</span></a></li>
-            <li><a href="../About/about.html"><img src="../Images/person.png" alt="person icon"> <span>About</span></a></li>
-            <li><a href="../Skill/skill.html"><img src="../Images/Settings.png" alt="skill icon" class="span-icon"><span>Skills</span></a></li>
-            <li><a href="hobby.html" class="active" aria-current="page"><img src="../Images/Video.png" alt="Hobby icon"><span>Hobby</span></a></li>
-            <li><a href="../Contact/contact.html"><img src="../Images/contact.png" alt="contact icon"><span>Contact</span></a></li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
+    </div>
   </header>
+
   <!-- Main Content -->
   <main id="main-content">
     <section id="hobby" aria-labelledby="hobby-heading">
-        <h1 class="hobby-heading">My Hobbies</h1>
-        <div class="videos-container">
-          <h3 id="videos">Videos</h3>
-          <div class="hobbies-videos">
-            <div class="videos video1">
-              <video controls aria-label="My Favorite music video">
-                <source src="../Video/favorite.webm" title="My Favorite music" type="video/webm">
-                Your browser does not support the video tag.
-              </video>
-              <h5>My Favorite music video</h5>
-            </div>
-            <div class="videos iframe">
+      <h1 class="hobby-heading">My Hobbies</h1>
+      <div class="videos-container">
+        <h3 id="videos">Videos</h3>
+        <div class="hobbies-videos">
+          <div class="videos video1">
+            <video controls aria-label="My Favorite music video">
+              <source src="../Video/favorite.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+            <h5>My Favorite music video</h5>
+          </div>
+          <div class="videos iframe">
             <iframe 
               src="https://www.youtube.com/embed/lo28cLs-jJc?enablejsapi=1" 
               title="Christian teaching video"
@@ -97,8 +111,8 @@
               aria-label="Christian teaching video">
             </iframe>
             <h5>Christian teaching video</h5>
-            </div>
-            <div class="videos iframe">
+          </div>
+          <div class="videos iframe">
             <iframe 
               src="https://www.youtube.com/embed/oUPmqcLmsM8?enablejsapi=1" 
               title="Movie based on true story"
@@ -107,9 +121,9 @@
               aria-label="Movie based on true story">
             </iframe>
             <h5>Movie based on true story</h5>
-            </div>
+          </div>
 
-            <div class="videos iframe">
+          <div class="videos iframe">
             <iframe 
               src="https://www.youtube.com/embed/AoKm1-Ogsjw?enablejsapi=1" 
               title="AI Shocks the World: Synthetic Humans, New Ameca, Orion, Time Machine, Jarvis…"
@@ -206,11 +220,21 @@
   <footer>
     <p>&copy; 2024 Sisay Tadewos. All Rights Reserved.</p>
     <ul class="social-links">
-      <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="../Images/Twitter.png" alt="Twitter Icon"></a></li>
-      <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github">
-        <img src="../Images/Github.png" alt="GitHub Icon"></a></li>
-      <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin">
-        <img src="../Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
+      <li>
+        <a href="https://x.com/SisThade51903" rel="noopener noreferrer" target="_blank" aria-label="Twitter">
+          <img src="../Images/Twitter.png" alt="Twitter Icon">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub">
+          <img src="../Images/Github.png" alt="GitHub Icon">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn">
+          <img src="../Images/Linkedin.png" alt="LinkedIn Icon">
+        </a>
+      </li>
     </ul>
   </footer>
 

@@ -13,90 +13,91 @@
   <meta name="robots" content="index, follow">
   <meta name="revisit-after" content="1 days">
   <title>Personal Portfolio</title>
+  <link rel="icon" type="image/png" href="../Images/favicon.ico">
+  <link rel="stylesheet" href="../CSS/font.css">
   <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="./contact.css">
-  <link rel="icon" type="image/png" href="../Images/favicon.ico">
-
   
+  <!-- Preloading for Performance -->
   <link rel="preload" as="map" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5118.74319491407!2d38.76573683304265!3d9.040486511143849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f642ba9e021%3A0x2321687a606863f3!2sAddis%20Ababa%20Institute%20of%20Technology!5e0!3m2!1sen!2set!4v1731411515137!5m2!1sen!2set">
 </head>
 
 <body>
-  <!-- Skip to Content for Accessibility -->
   <a class="skip-link visually-hidden" href="#main-content">Skip to content</a>
-
-  <!-- Header -->
   <header class="header">
-      <div class="profile">
-        <div class="profile-pic">
-          <img src="../Images/profile.webp" class="image img-fluid" alt="My Profile Picture" loading="lazy">
-        </div>
-        <ul class="social-links">
-          <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="../Images/Twitter.png" alt="Twitter Icon"></a></li>
-          <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github">
-            <img src="../Images/Github.png" alt="GitHub Icon"></a></li>
-          <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin">
-            <img src="../Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
-          <li><a href="https://www.instagram.com/sis__777999/" rel="noopener noreferrer" target="_blank" aria-label="Instagram" class="instagram"> <img src="../Images/Instagram.png" alt="instagram icon"></a></li>
+    <div class="profile">
+      <div class="profile-pic">
+        <img src="../Images/profile.webp" class="image img-fluid" alt="My Profile Picture" loading="lazy">
+      </div>
+      <ul class="social-links">
+        <li><a href="https://x.com/SisThade51903" rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="../Images/Twitter.png" alt="Twitter Icon"></a></li>
+        <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github"><img src="../Images/Github.png" alt="GitHub Icon"></a></li>
+        <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin"><img src="../Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
+        <li><a href="https://www.instagram.com/sis__777999/" rel="noopener noreferrer" target="_blank" aria-label="Instagram" class="instagram"><img src="../Images/Instagram.png" alt="Instagram Icon"></a></li>
+      </ul>
+    </div>
+    <button id="menu-btn" class="menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
+      <span class="menu-icon"><img src="../Images/Menu.png" alt="Menu Icon" loading="lazy"></span>
+    </button>
+    <div id="nav" class="nav">
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="../../index.html"><img src="../Images/Home.png" alt="Home Icon"><span>Home</span></a></li>
+          <li><a href="../About/about.html"><img src="../Images/person.png" alt="Person Icon"><span>About</span></a></li>
+          <li><a href="../Skill/skill.html"><img src="../Images/Settings.png" alt="Skills Icon" class="span-icon"><span>Skills</span></a></li>
+          <li><a href="../Hobby/hobby.html"><img src="../Images/Video.png" alt="Hobby Icon"><span>Hobby</span></a></li>
+          <li><a href="contact.html" class="active" aria-current="page"><img src="../Images/contact.png" alt="Contact Icon"><span>Contact</span></a></li>
         </ul>
-      </div>
-
-      <!-- Mobile Menu -->
-      <button id="menu-btn" class="menu-btn" aria-label="Toggle Navigation" aria-expanded="false">
-        <span class="menu-icon"><img src="../Images/Menu.png" alt="Menu Icon" loading="lazy"></span>
-      </button>
-
-      <!-- Navigation -->
-      <div id="nav" class="nav">
-        <nav aria-label="Main Navigation">
-          <ul>
-            <li><a href="../../index.html" ><img src="../Images/Home.png" alt="Home icon"><span>Home</span></a></li>
-            <li><a href="../About/about.html"><img src="../Images/person.png" alt="person icon"> <span>About</span></a></li>
-            <li><a href="../Skill/skill.html"><img src="../Images/Settings.png" alt="skill icon" class="span-icon"><span>Skills</span></a></li>
-            <li><a href="../Hobby/hobby.html"><img src="../Images/Video.png" alt="Hobby icon"><span>Hobby</span></a></li>
-            <li><a href="contact.html" class="active" aria-current="page"><img src="../Images/contact.png" alt="contact icon"><span>Contact</span></a></li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
+    </div>
   </header>
 
   <main id="main-content">
-      <!-- Contact Section -->
-      <section id="contact" aria-labelledby="contact-heading">
-          <div class="contact-container">
-              <h1 id="contact-heading">Contact</h1>
-              <form action="submit-form.php" method="POST">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-              </form>
-          </div>
-          <div class="location-container">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5118.74319491407!2d38.76573683304265!3d9.040486511143849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f642ba9e021%3A0x2321687a606863f3!2sAddis%20Ababa%20Institute%20of%20Technology!5e0!3m2!1sen!2set!4v1731411515137!5m2!1sen!2set" 
-                title="Our Location" 
-                loading="lazy" 
-                sandbox="allow-scripts" 
-                allow="geolocation">
-              </iframe>
-          </div>
-      </section>
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="contact-container">
+        <h1 id="contact-heading">Contact</h1>
+        <form action="submit-form.php" method="POST">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+      <div class="location-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5118.74319491407!2d38.76573683304265!3d9.040486511143849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f642ba9e021%3A0x2321687a606863f3!2sAddis%20Ababa%20Institute%20of%20Technology!5e0!3m2!1sen!2set!4v1731411515137!5m2!1sen!2set" 
+          title="Our Location" 
+          loading="lazy" 
+          sandbox="allow-scripts allow-same-origin" 
+          allow="geolocation">
+        </iframe>
+      </div>
+    </section>
   </main>
 
   <!-- Footer Section -->
   <footer>
     <p>&copy; 2024 Sisay Tadewos. All Rights Reserved.</p>
     <ul class="social-links">
-      <li><a href="https://x.com/SisThade51903"  rel="noopener noreferrer" target="_blank" aria-label="Twitter" class="twitter"><img src="../Images/Twitter.png" alt="Twitter Icon"></a></li>
-      <li><a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub" class="github">
-        <img src="../Images/Github.png" alt="GitHub Icon"></a></li>
-      <li><a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn" class="linkedin">
-        <img src="../Images/Linkedin.png" alt="LinkedIn Icon"></a></li>
+      <li>
+        <a href="https://x.com/SisThade51903" rel="noopener noreferrer" target="_blank" aria-label="Twitter">
+          <img src="../Images/Twitter.png" alt="Twitter Icon">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Sisyetad" rel="noopener noreferrer" target="_blank" aria-label="GitHub">
+          <img src="../Images/Github.png" alt="GitHub Icon">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/sisay-tadewos-790228275/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn">
+          <img src="../Images/Linkedin.png" alt="LinkedIn Icon">
+        </a>
+      </li>
     </ul>
   </footer>
 
-
+  <!-- JavaScript -->
   <script src="../JS/script.js"></script>
 </body>
 
