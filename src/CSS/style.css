@@ -661,10 +661,6 @@
         .span-icon{
           margin-right: 10px;
         }
-        .header .social-links{
-          display: block;
-        }
-
 
         .header .social-links {
           display: flex;
@@ -679,6 +675,10 @@
           padding: 15px 10px;
           width: 50px;
           height: 50px;
+        }
+        
+        .header .social-links li:hover{
+          background-color: #8086A6;
         }
 
         
